@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+				<!-- IP 157.43.148.109 -->
+				<!-- Order number 4292203490 -->
+<head>
+				<title>Login | Hello Guyz</title>
+				<style>
+*{
+				padding: 0;
+				margin: 0;
+}
+.HelloGuyzIcon{
+				background: #ff6529;
+				align-items: center;
+				justify-content: center;
+				position: relative;
+				width: 500px;
+				height: 500px;
+				border-radius: 50%;
+				top: 150px;
+				left: 220px;
+				box-shadow: 30px 30px 50px #202020;
+}
+.HelloGuyzIcon p{
+				width: 50px;
+				height: 100px;
+				position: relative;
+				top: 70px;
+				left: 120px;
+				color: #fff;
+				font-size: 20em;
+}
+form{
+				width: 800px;
+				height: 900px;
+				position: relative;
+				left: 100px;
+				top: 200px;
+}
+form input{
+				position: relative;
+				width: 700px;
+				height: 150px;
+				padding-bottom: 0;
+				border: none;
+				top: 100px;
+				left:0px;
+				border-bottom: 2px solid #808080;	
+				font-size: 3em;							
+				
+}
+form #login{
+			 position: relative;
+				top: 200px;
+				left: 0;
+				width: 750px;
+				height: 130px;
+				background: #ff6529;
+				color: #fff;
+				border-radius: 6px;
+				box-shadow: 2px 2px 3px 3px #a0a0a0;
+				font-size: 3.6em;
+}
+.bottomDiv p{
+				width: 0;
+				top: 250px;
+				left: 330px;
+				font-size: 3em;
+				position: relative;				
+}
+#singUp{
+				position: relative;
+				top: 300px;
+				left: 0;
+				width: 750px;
+				height: 90px;
+				background: #ff6529;
+				color: #fff;
+				border-radius: 6px;
+				box-shadow: 2px 2px 3px 3px #a0a0a0;
+				font-size: 3em;
+				text-align: center;
+				padding-top: 40px;
+}
+
+				</style>
+<body>
+								<div class="HelloGuyzIcon">
+											<p>
+													H
+											</p>
+								</div>											
+				<form method="post"action="/loginsuccess">
+								{% csrf_token %}
+							 				<input type="text"id="email"placeholder="Phone number or email address"name="uname">
+							 				<input type="password"id="password"placeholder="Password"name="password">
+							 				<a href="home"style="text-decoration: none;">
+							 			 <button id="login"type="submit">Log in</button>
+							 			 </a>
+							 	<div class="bottomDiv">
+							 	 <p>OR</p>
+							 	<a href="create_account"style="text-decoration: none;">
+							 	<div id="singUp">Create New Facebook Account</div>
+							 	</a>
+							 	</div>		
+							 	</form>	 	
+</body>
+</html>
